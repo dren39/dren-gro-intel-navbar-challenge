@@ -1,0 +1,388 @@
+/* Global styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  overflow-y: hidden;
+}
+
+/* Stylng on body */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('./images/gro-background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* styling on all <a> tags */
+a {
+  display: block;
+  color: dimgrey;
+  font-size: 0.9em;
+  padding-bottom: 34px;
+  position: relative;
+  margin-top: 35px;
+}
+
+/* Styling on logo in navbar */
+#navbar-logo {
+  width: 43px;
+  height: 43px;
+  display: block;
+  margin: auto;
+}
+
+/* Styling on the outer most container for the entire navbar */
+.top-bar-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 710px 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 55px;
+  position: relative;
+  z-index: 2;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+/* Styling for the outer most dropdown container */
+.dropdown-menu {
+  border-color: lightgrey;
+  border-style: solid;
+  height: 202px;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-right-style: none;
+  background: white;
+}
+
+ /* Styling for the inner container that holds the items of the navbar */
+.menu-bar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  width: 640px;
+  height:50px;
+  margin: auto;
+  text-align: center;
+  margin-left: 70px;
+}
+
+/* Styling for the login and signup buttons in navbar */
+.nav-btn {
+  padding: 9px;
+  border-radius: 31px;
+  width: 80px;
+  background: transparent;
+  cursor: pointer;
+  color: dimgrey;
+  border-color: dimgrey;
+}
+
+/* Specific color style for signup button */
+#signup-btn {
+  background-color: lightgrey;
+}
+
+/* Styling for the list of navbar items  */
+.menu-bar .products .industries .research .about {
+  height: 50px;
+  padding-top: 10px;
+}
+
+/* Styling for the outermost container that holds all Products related items */
+.products-container {
+  display: grid;
+  grid-template-columns: 325px 325px 325px;
+  grid-row-gap: 1rem;
+  width: 975px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Styling for containers that hold the heading paragraph and button for each product item */
+.product-info-container {
+  margin-left: 88px;
+  margin-top: 28px;
+}
+
+/* Styling for all <img> tags under products container */
+.products-container img {
+  width: 68px;
+  height :68px;
+  float: left;
+}
+
+/* Styling for all <h3> tags under products container */
+.products-container h3 {
+  color: dimgrey;
+  padding-bottom: 9px;
+}
+
+/* Styling for all <p> tags under products container */
+.products-container p {
+  color: darkgrey;
+  font-size: 0.75em;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+/* Styling for the Learn more buttons under the products container */
+.products-container button {
+  width: 85px;
+  height: 28px;
+  border-radius: 23px;
+  font-size: 0.6em;
+  font-weight: bold;
+  color: dimgrey;
+  background-color: whitesmoke;
+}
+
+/* Puts the child divs into a flexbox to move elements onto same line */
+.btn-content-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Position arrow icon to be in-line with letters */
+.icon-chevron-right1 {
+  margin-top: 1px;
+}
+
+/* Styling for inner containers that holds each item under products category */
+.product-item-container {
+  width: 90%;
+  justify-self: center;
+}
+
+/* Styling to display separator lines between products */
+.gridline {
+  background: linear-gradient(90deg, #eee 0%, transparent 1%) 289px 0, #fff;
+}
+
+/* Styling for outermost industry container that holds everything */
+.industries-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-row-gap: 0.5rem;
+  width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+  min-height: calc(100vh - 120px);
+}
+
+/* Styling for all <img> tags under industries container */
+.industries-container img {
+  width: 290px;
+  height: 160px;
+  cursor: pointer;
+  transition: transform .5s ease;
+}
+
+/* Styling for industry images */
+.industries-img-container {
+  overflow: hidden;
+  max-height: 160px;
+  border-radius: 16px;
+}
+
+/* Styling for inner container that hold individual industry items */
+.industries-item-container {
+  justify-self: center;
+}
+
+/* Styling for individual containers that hold <h3> and <p> tags for each industry item */
+.industries-info-container {
+  position: relative;
+  left: 50%;
+  bottom: 83px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 71%;
+  text-align: center;
+}
+
+/* Styling for the More information buttons under industries container */
+.industries-container button {
+  background-color: whitesmoke;
+  color: dimgrey;
+  font-size: 0.8em;
+  padding: 7px 11px;
+  border: none;
+  cursor: pointer;
+  border-radius: 17px;
+}
+
+/* Styling for <p> tags under industries container */
+.industries-container p {
+  color: white;
+  font-size: 0.75em;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+
+/* Specific styling for finance container due to aync size */
+#industries-finance-item-container {
+  justify-self: center;
+}
+
+/* Styling specifically for finance image to due async img size */
+#finance-img {
+  width: 298px;
+  height: 169px;
+  cursor: pointer;
+  transition: transform .5s ease;
+}
+
+/* Specific styling for finance ing container due to async size */
+.finance-img-container {
+  overflow: hidden;
+  max-width: 291px;
+  max-height: 160px;
+  border-radius: 16px;
+}
+
+/* Styling specifically for finance info container due to async img size */
+#industries-finance-info-container {
+  position: relative;
+  left: 50%;
+  bottom: 83px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 71%;
+  text-align: center;
+}
+
+/* Initially set all dropdown to no display */
+.hide-dropdown {
+  display: none;
+}
+
+.hide-products {
+  display: none;
+}
+
+.hide-industries {
+  display: none;
+}
+
+/* ---------------------------- Animations -------------------*/
+
+/* Change text color when hovering over <a> tag */
+a:hover {
+  color: lightgrey;
+}
+
+/* Change button color when hovering over login and signup buttons */
+.nav-btn:hover {
+  color: darkgrey;
+  border-color: darkgrey;
+}
+
+/* Change color of buttons in dropdown */
+.dropdown-menu button:hover {
+  color: maroon;
+}
+
+/* Zoom on image when hovering over it */
+.industries-img-container:hover img {
+  transform: scale(1.5);
+}
+
+/* Specific styling for finance image zoom due to asynx size */
+.finance-img-container:hover img {
+  transform: scale(1.5);
+}
+
+/* --------------------Responsive Rules ------------------- */
+
+@media screen and (max-width: 780px) {
+
+  * {
+    overflow-y: unset;
+  }
+  .menu-bar {
+    width: 480px;
+    margin-left: 0px;
+    height: 65px;
+  }
+
+  a {
+    font-size: 0.7em;
+  }
+  .top-bar-wrapper {
+    grid-template-columns: 2fr 600px;
+  }
+
+  .nav-btn {
+    padding: 4px;
+    width: 61px;
+    font-size: 0.6em;
+  }
+
+  .dropdown-menu {
+    border-style: none;
+    height: auto;
+    border-bottom-style: none;
+  }
+
+  .products-container {
+    display: block;
+    width: 34%;
+    padding: 0px;
+    margin: unset;
+    margin-left: 20%;
+  }
+
+  .product-item-container {
+    width: 100%;
+  }
+
+  .gridline {
+    background: none;
+  }
+  
+  .products-container img {
+    display: none;
+  }
+
+  .industries-container {
+    display: block;
+    width: 38%;
+  }
+
+  .industries-container img {
+    width: 260px;
+    height: 140px;
+    transition: none;
+  }
+
+  .industries-info-container {
+    left: 10%;
+    bottom: 96px;
+    transform: none;
+  }
+
+  #finance-img {
+    width: 272px;
+    height: 160px;
+    transition: none;
+  }
+
+  #industries-finance-info-container {
+    left: 11%;
+    bottom: 110px;
+    transform: none;
+  }
+
+  .industries-img-container:hover img {
+    transform: none;
+  }
+  
+  .finance-img-container:hover img {
+    transform: none;
+  }
+}
