@@ -1,6 +1,7 @@
 README
 
-This application was designed to showcase an interactive navigation bar for the Gro Intelligence website.
+This application was designed to showcase an interactive navigation bar featuring multiple layers of grids in the navigation bar dropdown.
+
 The application was built using HTML, CSS, and JavaScript.
 
 Functions:
