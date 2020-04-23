@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
 
     // ------------------- Selector Variables --------------------
-
     const navbar = document.querySelector('[data-navbar="navbar"]');
     const productTab = document.querySelector('[data-products="products-tab"]');
     const industryTab = document.querySelector('[data-industries="industries-tab"]');
@@ -10,9 +9,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const productDropdown = document.querySelector('[data-dropdown-products="dropdown-products"]')
     const industryDropdown = document.querySelector('[data-dropdown-industries="dropdown-industries"]')
 
-
     // --------------------- Functions ----------------------------
-
     function showProducts() {
         industryDropdown.classList.remove('industries-container');
         industryDropdown.classList.add('hide-industries')
@@ -39,8 +36,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     dropdown.classList.remove('dropdown-menu');
     dropdown.classList.add('hide-dropdown');
     }
-    // -------------------- Event Listener ------------------------
 
+    // -------------------- Event Listener ------------------------
     navbar.addEventListener('mouseover', event => {
     if(event.target.dataset.products === "products-tab") {
         showProducts();

@@ -298,12 +298,11 @@ a:hover {
 }
 
 /* --------------------Responsive Rules ------------------- */
-
 @media screen and (max-width: 780px) {
     * {
         overflow-y: unset;
     }
-    
+
     .menu-bar {
         width: 480px;
         margin-left: 0px;
