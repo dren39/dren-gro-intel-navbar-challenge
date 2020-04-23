@@ -1,153 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link href="./styles/entypo.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <div class="header">
-      <div class="top-bar-wrapper">
-        <div class="logo">
-          <img src="https://i.imgur.com/Jk7QdVa.png" id="navbar-logo">
-        </div>
-        <div class="menu-bar-wrapper" data-navbar="navbar">
-          <ul class="menu-bar">
-            <li class="products">
-              <a href="#" data-products="products-tab">Products</a>
-            </li>
-            <li class="industries">
-              <a href="#" data-industries="industries-tab">Industries</a>
-            </li>
-            <li class="research">
-              <a href="#">Research</a>
-            </li>
-            <li class="About">
-              <a href="#">About</a>
-            </li>
-            <li class="login">
-              <button class="nav-btn">Log In</button>
-            </li>
-            <li class="signup">
-              <button class="nav-btn" id="signup-btn">Sign Up</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="hide-dropdown" data-dropdown="dropdown">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link href="./styles/entypo.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="header">
 
-        <div class="hide-products" data-dropdown-products="dropdown-products">
-          <div class="product-item-container gridline">
-            <img src="https://i.imgur.com/PBpnlVk.png">
-            <div class="product-info-container">
-              <h3>Gro web app</h3>
-              <p>Jump straight into analysis through intuitive visualizations that can be monitored on 
-                live dashboards</p>
-                <button>
-                  <div class="btn-content-container">
-                    <div>Learn more</div>
-                    <div class="icon-chevron-right1"></div>
-                  </div>
-                </button>
-            </div>
-          </div>
-          <div class="product-item-container gridline">
-            <img src="https://i.imgur.com/SkDIDeJ.png">
-            <div class="product-info-container">
-              <h3>Gro forecasts</h3>
-              <p>Gain a competitive edge by using Gro’s proprietary machine-learning algorithms 
-                  and predictive models</p>
-              <button>
-                <div class="btn-content-container">
-                  <div>Learn more</div>
-                  <div class="icon-chevron-right1"></div>
+            <div class="top-bar-wrapper">
+
+                <div class="logo">
+                    <img src="https://i.imgur.com/Jk7QdVa.png" id="navbar-logo">
                 </div>
-              </button>
-            </div>
-          </div>
-          <div class="product-item-container">
-            <img src="https://i.imgur.com/TTRvZBd.jpg">
-            <div class="product-info-container">
-              <h3>Gro API</h3>
-              <p>Gain direct access to Gro’s entire database, including supply, demand, weather, and 
-                    environment data</p>
-              <button>
-                <div class="btn-content-container">
-                  <div>Learn more</div>
-                  <div class="icon-chevron-right1"></div>
+
+                <div class="menu-bar-wrapper" data-navbar="navbar">
+                    <ul class="menu-bar">
+                    <li class="products">
+                        <a href="#" data-products="products-tab">Products</a>
+                    </li>
+                    <li class="industries">
+                        <a href="#" data-industries="industries-tab">Industries</a>
+                    </li>
+                    <li class="research">
+                        <a href="#">Research</a>
+                    </li>
+                    <li class="About">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="login">
+                        <button class="nav-btn">Log In</button>
+                    </li>
+                    <li class="signup">
+                        <button class="nav-btn" id="signup-btn">Sign Up</button>
+                    </li>
+                    </ul>
                 </div>
-              </button>
             </div>
-          </div>
+            
+            <div class="hide-dropdown" data-dropdown="dropdown">
+
+                <div class="hide-products" data-dropdown-products="dropdown-products">
+
+                    <div class="product-item-container gridline">
+                        <img src="https://i.imgur.com/PBpnlVk.png">
+                        <div class="product-info-container">
+                            <h3>Gro web app</h3>
+                            <p>Jump straight into analysis through intuitive visualizations that can be monitored on 
+                            live dashboards</p>
+                            <button>
+                                <div class="btn-content-container">
+                                <div>Learn more</div>
+                                <div class="icon-chevron-right1"></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-item-container gridline">
+                        <img src="https://i.imgur.com/SkDIDeJ.png">
+                        <div class="product-info-container">
+                            <h3>Gro forecasts</h3>
+                            <p>Gain a competitive edge by using Gro’s proprietary machine-learning algorithms 
+                                and predictive models</p>
+                            <button>
+                            <div class="btn-content-container">
+                                <div>Learn more</div>
+                                <div class="icon-chevron-right1"></div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-item-container">
+                        <img src="https://i.imgur.com/TTRvZBd.jpg">
+                        <div class="product-info-container">
+                            <h3>Gro API</h3>
+                            <p>Gain direct access to Gro’s entire database, including supply, demand, weather, and 
+                                environment data</p>
+                            <button>
+                            <div class="btn-content-container">
+                                <div>Learn more</div>
+                                <div class="icon-chevron-right1"></div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="hide-industries" data-dropdown-industries="dropdown-industries">
+
+                    <div id="industries-finance-item-container">
+                        <div class="finance-img-container">
+                            <img src="https://i.imgur.com/sD8rNev.jpg" id="finance-img">
+                        </div>
+                        <div id="industries-finance-info-container">
+                            <p>FINANCIAL SERVICES</p>
+                            <button>
+                            <div class="btn-content-container">
+                                <div>More information</div>
+                                <div class="icon-chevron-right1"></div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="industries-item-container">
+                        <div class="industries-img-container">
+                            <img src="https://i.imgur.com/NDiU1Tb.jpg">
+                        </div>
+                        <div class="industries-info-container">
+                            <p>PHYSICAL TRADERS</p>
+                            <button>
+                            <div class="btn-content-container">
+                                <div>More information</div>
+                                <div class="icon-chevron-right1"></div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="industries-item-container">
+                        <div class="industries-img-container">
+                            <img src="https://i.imgur.com/D5ZONta.jpg">
+                        </div>
+                        <div class="industries-info-container">
+                            <p>SOURCING & PROCUREMENT</p>
+                            <button>
+                            <div class="btn-content-container">
+                                <div>More information</div>
+                                <div class="icon-chevron-right1"></div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="industries-item-container">
+                        <div class="industries-img-container">
+                            <img src="https://i.imgur.com/BHs42ew.jpg">
+                        </div>
+                        <div class="industries-info-container">
+                            <p>CONSULTING</p>
+                            <button>
+                            <div class="btn-content-container">
+                                <div>More information</div>
+                                <div class="icon-chevron-right1"></div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-              
-        <div class="hide-industries" data-dropdown-industries="dropdown-industries">
-          <div id="industries-finance-item-container">
-            <div class="finance-img-container">
-              <img src="https://i.imgur.com/sD8rNev.jpg" id="finance-img">
-            </div>
-            <div id="industries-finance-info-container">
-              <p>FINANCIAL SERVICES</p>
-              <button>
-                <div class="btn-content-container">
-                  <div>More information</div>
-                  <div class="icon-chevron-right1"></div>
-                </div>
-              </button>
-            </div>
-          </div>
-          <div class="industries-item-container">
-            <div class="industries-img-container">
-              <img src="https://i.imgur.com/NDiU1Tb.jpg">
-            </div>
-            <div class="industries-info-container">
-              <p>PHYSICAL TRADERS</p>
-              <button>
-                <div class="btn-content-container">
-                  <div>More information</div>
-                  <div class="icon-chevron-right1"></div>
-                </div>
-              </button>
-            </div>
-          </div>
-          <div class="industries-item-container">
-            <div class="industries-img-container">
-              <img src="https://i.imgur.com/D5ZONta.jpg">
-            </div>
-            <div class="industries-info-container">
-              <p>SOURCING & PROCUREMENT</p>
-              <button>
-                <div class="btn-content-container">
-                  <div>More information</div>
-                  <div class="icon-chevron-right1"></div>
-                </div>
-              </button>
-            </div>
-          </div>
-          <div class="industries-item-container">
-            <div class="industries-img-container">
-              <img src="https://i.imgur.com/BHs42ew.jpg">
-            </div>
-            <div class="industries-info-container">
-              <p>CONSULTING</p>
-              <button>
-                <div class="btn-content-container">
-                  <div>More information</div>
-                  <div class="icon-chevron-right1"></div>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
