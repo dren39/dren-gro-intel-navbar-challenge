@@ -11,9 +11,11 @@
 /* Stylng on body */
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('https://i.imgur.com/VGCE3Fx.jpg');
+    background-image: url('./images/background_v2.png');
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position-y: 75px;
 }
 
 /* styling on all <a> tags */
